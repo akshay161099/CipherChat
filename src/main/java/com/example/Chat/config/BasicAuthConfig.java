@@ -34,7 +34,6 @@ public class BasicAuthConfig {
                 .password(passwordEncoder().encode("password"))
                 .roles("USER")
                 .build();
-
         UserDetails admin = User.builder()
                 .username("admin")
                 .password(passwordEncoder().encode("password"))
